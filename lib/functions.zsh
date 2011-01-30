@@ -21,6 +21,10 @@ function preexec {
   title $cmd[1]:t "$cmd[2,-1]"
 }
 
+function zsh_refresh() {
+  source ~/.zshrc
+}
+
 function zsh_stats() {
   history | awk '{print $2}' | sort | uniq -c | sort -rn | head
 }
