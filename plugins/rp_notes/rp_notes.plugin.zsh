@@ -9,6 +9,6 @@ compinit -i
 
 NOTES=~/Dropbox/rpLib/Notes
 
-function notes () {
+function n {
   v $NOTES/$1.mdown
 }
