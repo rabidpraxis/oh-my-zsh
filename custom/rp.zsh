@@ -30,3 +30,7 @@ hosts=/etc/hosts
 
 # Emacs style keybinding
 bindkey -e
+
+# Replace pager less with vim
+# export PAGER=~/bin/vimpager
+# alias less=$PAGER

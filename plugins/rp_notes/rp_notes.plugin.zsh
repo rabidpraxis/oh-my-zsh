@@ -10,5 +10,5 @@ compinit -i
 NOTES=~/Dropbox/rpLib/Notes
 
 function n {
-  v $NOTES/$1.mdown
+  v $NOTES/$1
 }
