@@ -3,7 +3,7 @@ function list_jobs() {
   echo "$(jobs | grep '+' | sed 's/^.*suspended  //')"
 }
 
-PROMPT='%{$fg_bold[red]%}-> %{$fg[green]%}%n:%m %{$fg[cyan]%}%2c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
+PROMPT='%{$fg_bold[red]%}-> %{$fg[green]%}%n:%{$fg[white]%}%m %{$fg[cyan]%}%2c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
 RPS1='$(list_jobs) | %j'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="(%{$fg[red]%}"
