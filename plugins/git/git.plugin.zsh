@@ -1,7 +1,7 @@
 # Aliases
 alias g='git'
 compdef g=git
-alias gst='git status'
+alias gst='git status --short'
 compdef _git gst=git-status
 alias gl='git pull'
 compdef _git gl=git-pull
@@ -26,6 +26,8 @@ compdef gcount=git
 alias gcp='git cherry-pick'
 compdef _git gcp=git-cherry-pick
 alias glg='git log --stat --max-count=5'
+compdef _git glg=git-log
+alias gra='g ra'
 compdef _git glg=git-log
 
 # Git and svn mix
