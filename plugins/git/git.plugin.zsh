@@ -1,7 +1,7 @@
 # Aliases
 alias g='git'
 compdef g=git
-alias gst='git status --short'
+alias gst='git status --short --ignore-submodules'
 compdef _git gst=git-status
 alias gl='git pull'
 compdef _git gl=git-pull
@@ -29,6 +29,7 @@ alias glg='git log --stat --max-count=5'
 compdef _git glg=git-log
 alias gra='g ra'
 compdef _git glg=git-log
+alias gd='g diff --ignore-submodules'
 
 # Git and svn mix
 alias git-svn-dcommit-push='git svn dcommit && git push github master:svntrunk'
