@@ -2,6 +2,12 @@
 export EDITOR="vim"
 export VISUAL="vim"
 
+export JRUBY_OPTS=--1.9
+
+export CHEF_USER="kevin"
+
+export DIBS_LOCAL='/Users/lil/Dropbox/rpLib/Work/theprogram/NIKE/NikeReserve/digial_wristband_0_5/gem'
+
 # ====== Aliases =============================================================
 alias vv='mvim'
 alias v='vim'
